@@ -1,2 +1,2 @@
-# Hoyo-statistics
+# MiHoyo-statistics
 hoyo-statistics
