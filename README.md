@@ -1,6 +1,6 @@
 # MiHoyo-statistics
 hoyo-statistics<br>
-*Jāveido statistikas no spēļu kompānija miHoyo jeb HoyoLab. Tas būs:<br>
+*Jāveido statistikas no spēļu kompānija miHoyo jeb HoyoVerse. Tas būs:<br>
   🫧1 lapa: Sākums, kur var tikt uz visām citām lapām.(start.html)<br>
   🫧2 lapa: miHoyo spēļu Active player count every version.(player.html)<br>
   🫧3 lapa: miHoyo ZZZ, HSR, GI revenue sales per version<br>
