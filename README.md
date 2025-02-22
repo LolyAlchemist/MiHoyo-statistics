@@ -6,6 +6,7 @@ hoyo-statistics<br>
   🫧3 lapa: miHoyo ZZZ, HSR, GI revenue sales per version<br>
   🫧4 lapa: voicelines chars -GI till 3.0, HSR ~2.....?<br>
   🫧5 lapa: 4⭐ + 5⭐ skaiti. GI, HSR.<br>
+  (varbūt būs HI3)
 
 
 LolyAlchemist - Lolita<br>
