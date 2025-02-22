@@ -6,7 +6,7 @@ app = flask.Flask(__name__)
 def start():
     return flask.render_template("start.html")
 
-@app.route("/")
+@app.route("/player")
 def player():
     return flask.render.template("player.html")
 app.run()
