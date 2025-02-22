@@ -8,5 +8,7 @@ def start():
 
 @app.route("/player")
 def player():
-    return flask.render.template("player.html")
-app.run()
+    return flask.render_template("player.html")
+
+
+app.run(debug=True)
