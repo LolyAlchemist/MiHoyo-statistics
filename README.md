@@ -9,8 +9,8 @@ hoyo-statistics<br>
   (varbūt būs HI3)
 
 
-LolyAlchemist - Lolita<br>
-AliseLi - Alise<br>
+LolyAlchemist - Lolita(strada ar main.py, vispar ar visu strada)<br>
+AliseLi - Alise(strada ar css un tabulas taisa)<br>
 
 
 
