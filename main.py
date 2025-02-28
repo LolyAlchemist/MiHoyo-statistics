@@ -1,4 +1,6 @@
 import flask
+import pandas as pd
+import matplotlib.pyplot as plt
 
 app = flask.Flask(__name__)
 
@@ -8,6 +10,13 @@ def start():
 
 @app.route("/player")
 def player():
+    df = pd.read_csv('ZZZ_StatisticsCC.csv', sep=';')
+    df.plot(kind='scatter', x='Release Date', y="Revenue")
+
+    plt.title("Attack pret Defense")
+    plt.xlabel("Attack")
+    plt.ylabel("Defense")
+    plt.savefig('player1.png')
     return flask.render_template("player.html")
 
 @app.route("/sales")
