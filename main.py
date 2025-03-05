@@ -11,12 +11,12 @@ def start():
 @app.route("/player")
 def player():
     df = pd.read_csv('ZZZ_StatisticsCC.csv', sep=';')
-    df.plot(kind='scatter', x='Release Date', y="Revenue")
+    df.plot(kind='scatter', x='Version', y="Active Player Count")
 
     plt.title("Attack pret Defense")
-    plt.xlabel("Attack")
-    plt.ylabel("Defense")
-    plt.savefig('player1.png')
+    plt.xlabel("Release Date")
+    plt.ylabel("Revenue")
+    plt.savefig('player_zzz.png')
     return flask.render_template("player.html")
 
 @app.route("/sales")
