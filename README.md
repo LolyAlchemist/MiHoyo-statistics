@@ -9,8 +9,9 @@ hoyo-statistics<br>
   (varbūt būs HI3)
 
 
-LolyAlchemist - Lolita(strada ar main.py, vispar ar visu strada)<br>
-AliseLi - Alise(strada ar css un tabulas taisa)<br>
+LolyAlchemist - Lolita(strada ar main.py(app.route, tabula image creation), palīdz Alisei), veido start.html(design(css) + text) + colab tabulas<br>
+AliseLi - Alise(strada ar css un tabulas taisa(exel)), veido player.html(design(css)), + colab tabulas<br>
+
 
 
 
