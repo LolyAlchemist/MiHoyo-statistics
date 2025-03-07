@@ -1,7 +1,6 @@
 import flask
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import figure
 
 app = flask.Flask(__name__)
 
