@@ -13,7 +13,7 @@ def player():
     df = pd.read_csv('ZZZ_StatisticsCC.csv', sep=';')
     df.plot(kind='scatter', x='Version', y="Active Player Count")
 
-    plt.title("Attack pret Defense")
+    plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
     plt.savefig('player_zzz.png')
