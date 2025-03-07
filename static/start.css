@@ -1,13 +1,49 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #b23131;
+    background-color: rgb(66, 34, 95);
     text-align: left;
     margin: 0;
     padding: 0;
 }
 
-a {
-#####for link design#####
+.navi {
+    width: 100%;
+    padding: 10px;
+    position: fixed; /* Keeps it at the top */
+    font-size: 22pt;
+    z-index: 1000;
+    background-color: rgb(244, 255, 163);
+    margin: 0 auto;
 }
 
-########"    background-image:url('atteli/taiyakidot.jpg'); " for background for our other shit code############
+.navi ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;  /* Forces horizontal layout */
+    padding: 0;
+}
+
+.navi ul li {
+    margin-left: 20px;
+}
+
+.navi ul li a {
+    color: rgb(66, 34, 95);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navi ul li a:hover {
+    background-color: rgba(45, 5, 242, 0.2);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: rgb(154, 116, 221);
+}
