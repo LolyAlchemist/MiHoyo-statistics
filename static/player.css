@@ -23,7 +23,7 @@ body {
 }
 
 .navi ul li {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navi ul li a {
@@ -45,4 +45,43 @@ body {
 
 .nav-link {
     color: rgb(233, 125, 141);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    background: rgb(235, 179, 179);
+    padding: 10px;
+}
+
+.styled-table td {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+.text-cell {
+    width: 10%;
+    font-size: 18px;
+    color: #333;
+}
+
+.image-cell img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
