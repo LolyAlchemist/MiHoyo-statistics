@@ -1,6 +1,7 @@
 import flask
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 
 app = flask.Flask(__name__)
 
@@ -16,6 +17,7 @@ def player():
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
+    plt.yticks(rotation=90)
     plt.savefig('player_zzz.png')
     return flask.render_template("player.html")
 
