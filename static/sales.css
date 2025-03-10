@@ -1,1 +1,58 @@
+body {
+    font-family: "kristen itc", sans-serif;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
 
+
+a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(234, 234, 156);
+}
+
+
+.navi {
+    width: 100%;
+    padding: 10px;
+    position: fixed; 
+    font-size: 22pt;
+    font-family: "kristen itc font", sans-serif;
+    z-index: 1000;
+    background-color: rgb(244, 255, 163);
+    margin: 0 auto;
+}
+
+
+
+.navi ul li {
+    margin-left: 20px;
+}
+
+.navi ul li a {
+    color: rgb(66, 34, 95);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navi ul li a:hover {
+    background-color: rgba(45, 5, 242, 0.2);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: rgb(154, 116, 221);
+}
