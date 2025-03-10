@@ -1,11 +1,17 @@
 body {
-    font-family: "kristen itc font", sans-serif;
-    background-color: rgb(66, 34, 95);
+    font-family: "kristen itc", sans-serif;
+    background: linear-gradient(rgba(81, 24, 142, 0.5), rgba(81, 24, 142, 0.5)), 
+                url('/static/images/inazuma.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    font-size: 20px; /* Adjust to your preferred size */
+    color: white;
+    font-size: 20px;
     margin: 0;
     padding: 0;
 }
+
 
 a {
     color: rgb(255, 255, 255); 
