@@ -1,6 +1,9 @@
 body {
     font-family: "kristen itc font", sans-serif;
-    background-color: #d7eb94;
+    background: linear-gradient(rgba(236, 228, 122, 0.525), rgba(219, 216, 153, 0.453)),
+                url('/static/images/liyue.jpg');
+    background-size: 100% 1850px;
+    background-position: center top;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -65,12 +68,13 @@ img {
 
 .styled-table {
     border-collapse: collapse;
-    background: rgb(235, 179, 179);
+    background-color: rgba(235, 179, 179, 0.5);
     padding: 10px;
 }
 
+
 .styled-table td {
-    border: 2px solid black;
+    border: 2px solid rgba(248, 115, 53, 0.226);
     padding: 15px;
     text-align: left;
 }
