@@ -27,6 +27,14 @@ def player():
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
     plt.savefig('player_HSR.png')
+
+    df2 = pd.read_csv('game_statisticsgenshinimpact.csv')
+    df2.plot(kind='scatter', x='Version', y="Active Player Count")
+
+    plt.title("spēlētāju skaits katrā versijā")
+    plt.xlabel("Release Date")
+    plt.ylabel("Revenue")
+    plt.savefig('player_genshin.png')
     return flask.render_template("player.html")
 
 @app.route("/sales")
