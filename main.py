@@ -18,6 +18,15 @@ def player():
     plt.ylabel("Revenue")
     plt.yticks(rotation=90)
     plt.savefig('player_zzz.png')
+
+
+    df1 = pd.read_csv('Game_StatisticsHSR (1).csv')
+    df1.plot(kind='scatter', x='Version', y="Active Player Count")
+
+    plt.title("spēlētāju skaits katrā versijā")
+    plt.xlabel("Release Date")
+    plt.ylabel("Revenue")
+    plt.savefig('player_HSR.png')
     return flask.render_template("player.html")
 
 @app.route("/sales")
