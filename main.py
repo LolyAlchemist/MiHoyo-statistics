@@ -17,7 +17,7 @@ def player():
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
     plt.yticks(rotation=90)
-    plt.savefig('player_zzz.png')
+    plt.savefig('static/images/player_zzz.png')
 
 
     df1 = pd.read_csv('Game_StatisticsHSR (1).csv')
@@ -26,7 +26,7 @@ def player():
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
-    plt.savefig('player_HSR.png')
+    plt.savefig('static/images/player_HSR.png')
 
     df2 = pd.read_csv('game_statisticsgenshinimpact.csv')
     df2.plot(kind='scatter', x='Version', y="Active Player Count")
@@ -34,7 +34,7 @@ def player():
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
-    plt.savefig('player_genshin.png')
+    plt.savefig('static/images/player_genshin.png')
     return flask.render_template("player.html")
 
 @app.route("/sales")
@@ -58,7 +58,7 @@ def sales():
 
     plt.title('Ieņēmumu sadalījums pēc versijas')
     plt.ylabel('') 
-    plt.savefig('sales_genshin.png')
+    plt.savefig('static/images/sales_genshin.png')
 
     return flask.render_template("sales.html")
 
