@@ -17,8 +17,7 @@ body {
     font-size: 22pt;
     font-family: "Kristen ITC", sans-serif;
     z-index: 1000;
-    background-color: rgb(245, 200, 239);
-    margin: 0 auto;
+    background-color: rgb(194, 137, 211);
 }
 
 .navi ul {
@@ -33,7 +32,7 @@ body {
 }
 
 .navi ul li a {
-    color: rgb(241, 4, 4);
+    color: rgb(234, 234, 156);
     text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
@@ -101,4 +100,43 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+#downloadBtn0 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn0:hover {
+    background-color: rgb(152, 106, 167);
+}
+
+#downloadBtn1 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn1:hover {
+    background-color: rgb(152, 106, 167);
+}
+
+#downloadBtn2 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn2:hover {
+    background-color: rgb(152, 106, 167);
 }
