@@ -35,13 +35,10 @@
 
         <br>  <button id="downloadBtn">Download gensin_CSV</button>
 
-        <!-- Link to the CSV file (hidden) -->
         <a id="downloadLink" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
-
-
+        
         <script>
             document.getElementById('downloadBtn').addEventListener('click', function() {
-                // Trigger the click event on the hidden <a> link to start the download
                 document.getElementById('downloadLink').click();
             });
         </script>
