@@ -27,15 +27,15 @@
     </nav>
         
     <nav style="width:30%; height:10px;"></nav>
-    <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="table-container">
         <table class="styled-table">
             <tr>
                 <td class="text-cell">
-                    <strong>Genshin ietekmē pārdošanu atkarībā no versijas datuma.</strong><br> 
-                    (0% tie, kuriem nav ieņēmumu vērtībām..)
+                    Genshin Impact ienēmumi pēc versijas.<br> 
+                    (1.4% ir tie, kuriem nav ieņēmumu vērtību..)
                     <br><br>
-                    <button id="downloadBtn">Download gensin_CSV</button>
+                    <button id="downloadBtn">Instalēt gensin_CSV</button>
                     <a id="downloadLink" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
                     
                     <script>
@@ -46,6 +46,23 @@
                 </td>
                 <td class="image-cell">
                     <img src="{{ url_for('static', filename='images/sales_genshin.png') }}" style="width: 80%; height: auto;" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class = "text-cell">
+                    Honkai: Star rail ienēmumi pēc versijas.<br> 
+                    (1.0% ir tie, kuriem nav ieņēmumu vērtību..)<br><br>
+                    <button id="downloadBtn3">Instalēt HSR_CSV</button>
+                    <a id="downloadLink3" href="/static\Game_StatisticsHSR (1).csv" download="/static\Game_StatisticsHSR (1).csv" style="display:none;"></a>
+                    
+                    <script>
+                        document.getElementById('downloadBtn3').addEventListener('click', function() {
+                            document.getElementById('downloadLink3').click();
+                        });
+                    </script>
+                </td>
+                <td class="image-cell">
+                    <img src="{{ url_for('static', filename='images/sales_HSR.png') }}" style="width: 80%; height: auto;" alt="">
                 </td>
             </tr>
         </table>
