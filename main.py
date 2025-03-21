@@ -108,12 +108,31 @@ def sales():
 
     revenue_values = [150, 67, 5, 5, 250, 5]
     df4['Revenue Values'] = revenue_values
-    df4.plot(y='Revenue Values', kind='pie', labels=df3['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
+    df4.plot(y='Revenue Values', kind='pie', labels=df4['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
 
 
     plt.title('Ieņēmumu sadalījums pēc versijas')
     plt.ylabel('')
     plt.savefig('static/images/sales_HSR.png')
+
+    data3 = {
+        "Version": ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5"],
+        "Revenue": [
+        "$100M", 
+        "$70,", 
+        "Not specified", 
+        "Not specified", 
+        "$266M", 
+        "Not specified"
+        ]
+        }
+    df5 = pd.DataFrame(data3)
+    revenue_values = [100, 70, 5, 5, 266, 5]
+    df5['Revenue'] = revenue_values
+    df5.plot(y='Revenue', kind='pie', labels=df5['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
+    plt.title('Ieņēmumu sadalījums pēc versijas')
+    plt.ylabel('')
+    plt.savefig('static/images/sales_zzz.png')
 
 
 
