@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>miHoyo statistics</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sales.css') }}">
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navi">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -26,25 +26,30 @@
         </ul>
     </nav>
         
-
     <nav style="width:30%; height:10px;"></nav>
-<br><br><br>
-<table>
-    <tr>
-        <td>Genshin ietekmē pārdošanu atkarībā no versijas datuma.<br> (0% tie, kuriem nav ieņēmumu vērtībām..)
+    <br><br><br><br><br><br>
+    <div class="table-container">
+        <table class="styled-table">
+            <tr>
+                <td class="text-cell">
+                    <strong>Genshin ietekmē pārdošanu atkarībā no versijas datuma.</strong><br> 
+                    (0% tie, kuriem nav ieņēmumu vērtībām..)
+                    <br><br>
+                    <button id="downloadBtn">Download gensin_CSV</button>
+                    <a id="downloadLink" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
+                    
+                    <script>
+                        document.getElementById('downloadBtn').addEventListener('click', function() {
+                            document.getElementById('downloadLink').click();
+                        });
+                    </script>
+                </td>
+                <td class="image-cell">
+                    <img src="{{ url_for('static', filename='images/sales_genshin.png') }}" style="width: 80%; height: auto;" alt="">
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <br>  <button id="downloadBtn">Download gensin_CSV</button>
-
-        <a id="downloadLink" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
-        
-        <script>
-            document.getElementById('downloadBtn').addEventListener('click', function() {
-                document.getElementById('downloadLink').click();
-            });
-        </script>
-    </td>
-        <td><img src="{{ url_for('static', filename='images/sales_genshin.png') }}" style="width: 80%; height: auto;" alt=""></td>
-    </tr>
-</table>
 </body>
 </html>
