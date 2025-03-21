@@ -27,12 +27,12 @@
     </nav>
         
     <nav style="width:30%; height:10px;"></nav>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="table-container">
         <table class="styled-table">
             <tr>
                 <td class="text-cell">
-                    Genshin Impact ienēmumi pēc versijas.<br> 
+                    Genshin Impact ienēmumi pēc datuma.<br> 
                     (1.4% ir tie, kuriem nav ieņēmumu vērtību..)
                     <br><br>
                     <button id="downloadBtn">Instalēt gensin_CSV</button>
@@ -50,7 +50,7 @@
             </tr>
             <tr>
                 <td class = "text-cell">
-                    Honkai: Star rail ienēmumi pēc versijas.<br> 
+                    Honkai: Star rail ienēmumi pēc datuma.<br> 
                     (1.0% ir tie, kuriem nav ieņēmumu vērtību..)<br><br>
                     <button id="downloadBtn3">Instalēt HSR_CSV</button>
                     <a id="downloadLink3" href="/static\Game_StatisticsHSR (1).csv" download="/static\Game_StatisticsHSR (1).csv" style="display:none;"></a>
@@ -63,6 +63,24 @@
                 </td>
                 <td class="image-cell">
                     <img src="{{ url_for('static', filename='images/sales_HSR.png') }}" style="width: 80%; height: auto;" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class = "text-cell">
+                    Zoneless Zone Zero ienēmumi pēc versijas.<br>
+                    (1.1% ir tie, kuriem nav ieņēmumu vērtību..)<br><br>
+                    <button id="downloadBtn4">Instalēt ZZZ_CSV</button>
+                    <a id="downloadLink4" href="/static\ZZZ_StatisticsCC.csv" download="/static\ZZZ_StatisticsCC.csv" style="display:none;"></a>
+                    
+                    <script>
+                        document.getElementById('downloadBtn4').addEventListener('click', function() {
+                            document.getElementById('downloadLink4').click();
+                        });
+                    </script>
+
+                </td>
+                <td class = "image-cell">
+                    <img src="{{ url_for('static', filename='images/sales_zzz.png') }}" style="width: 80%; height: auto;" alt="">
                 </td>
             </tr>
         </table>
