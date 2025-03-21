@@ -29,11 +29,29 @@
 
     <nav style="width:30%; height:10px;"></nav>
 <br><br><br>
-
+    <h2>Autori: Lolita Litavniece, Alise Litavniece</h2><br><br>
     Projekts par kompānijas MiHoyo spēlēm, grafiķi un statistikas.<br><br>
     <a href="{{ url_for('player') }}">Active player count</a><br><br>
     <a href="{{ url_for('sales') }}">revenue sales per version</a><br><br>
     <a href="{{ url_for('stars') }}">4⭐ + 5⭐</a><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
+    <h2>Vai tev patīk šis saits?</h2>
+    <form method="POST">
+        <input type="text" name="answer" required>
+        <button type="submit">Iesniegt</button>
+    </form><br><br>
+    <h2>Atbildes</h2>
+    <table>
+        <tr>
+            <th>Numurs</th>
+            <th>Atbildes</th>
+        </tr>
+        {% for ans in answers %}
+        <tr>
+            <td>{{ ans[0] }}</td>  
+            <td>{{ ans[1] }}</td>  
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
