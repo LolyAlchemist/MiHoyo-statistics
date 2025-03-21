@@ -1,12 +1,43 @@
 import flask
 import pandas as pd
 import matplotlib.pyplot as plt
+import sqlite3
 
 app = flask.Flask(__name__)
 
-@app.route("/")
+def init_db():
+    with sqlite3.connect("database.db") as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS answers (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                answer TEXT NOT NULL
+            )
+        """)
+        conn.commit()
+init_db()
+
+
+
+@app.route("/", methods=["GET", "POST"])
 def start():
-    return flask.render_template("start.html")
+    if flask.request.method == "POST":
+        answer = flask.request.form["answer"]
+
+        with sqlite3.connect("database.db") as conn:
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO answers (answer) VALUES (?)", (answer,))
+            conn.commit()
+        return flask.redirect("/")
+
+
+    with sqlite3.connect("database.db") as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM answers")
+        answers = cursor.fetchall()
+
+    return flask.render_template("start.html", answers=answers)
+
 
 @app.route("/player")
 def player():
