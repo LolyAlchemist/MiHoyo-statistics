@@ -28,6 +28,63 @@
         
 
     <nav style="width:30%; height:10px;"></nav><br><br>
+    <table class="styled-table">
+        <tr>
+            <td class="text-cell"><br>
+                Honkai: Star Rail 4* un 5* skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
+             <br><br> <button id="downloadBtn5">Instalēt char_HSR_CSV</button>
+
+               
+              <a id="downloadLink5" href="static\Honakai_Star_Rail_CharLIST.csv" download="Honakai_Star_Rail_CharLIST.csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn5').addEventListener('click', function() {
+                      document.getElementById('downloadLink5').click();
+                  });
+              </script>
+          </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/stars_hsr.png') }}" alt="">
+            </td>
+        </tr>
+      <tr>
+          <td class="text-cell"><br>
+            Honkai: Star Rail 4* un 5* skaits, priekš pašam beigām (tails), kur rāda pēdējos 10 varoņus pēc to retuma.
+              <br><br> <button id="downloadBtn6">Instalēt char_HSR_CSV</button>
+               
+              <a id="downloadLink6" href="static\Game_StatisticsHSR (1).csv" download="Game_StatisticsHSR (1).csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn6').addEventListener('click', function() {
+                      document.getElementById('downloadLink6').click();
+                  });
+              </script>
+          </td>
+          <td class="image-cell">
+          <img src="{{ url_for('static', filename='images/starsT_hsr.png') }}" alt="">
+  
+          </td>
+        </tr>
+  
+            <tr>
+          <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Grafika var redzēt, ka GI bija savi kāpumi un kritumi. <br>Vidējs spēlētāju skaits ar katru versiju palielinājās par apmēram 7 mil. (Tā pat kā HSR, GI 1.0 līdz 1.1 versijai spēlētāju skaits palielinājās par 33 mil.)
+              <br><br>  <button id="downloadBtn2">Download gensin_CSV</button>
+  
+              <a id="downloadLink2" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn2').addEventListener('click', function() {
+                      document.getElementById('downloadLink2').click();
+                  });
+              </script>
+          </td>
+          <td class="image-cell">
+          <img src="{{ url_for('static', filename='images/player_genshin.png') }}" alt="">
+  
+  
+          </td>
+        </tr>
+    </table>
 
 
 
