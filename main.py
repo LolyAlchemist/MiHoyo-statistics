@@ -17,6 +17,27 @@ def init_db():
         conn.commit()
 init_db()
 
+def init2_db():
+    conn = sqlite3.connect("atbilde.db")
+    cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS responses (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            response TEXT CHECK(response IN ('Yes', 'No')) NOT NULL
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init2_db()
+
+def save_atbilde(atbilde):
+    conn = sqlite3.connect("atbilde.db")
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO responses (response) VALUES (?)", (atbilde,))
+    conn.commit()
+    conn.close()
+
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -139,8 +160,19 @@ def sales():
     return flask.render_template("sales.html")
 
 
-@app.route("/stars")
+@app.route("/stars", methods=["GET", "POST"])
 def stars():
-    return flask.render_template("stars.html")
+    message = ""
+
+    if flask.request.method == "POST":
+        atbilde = flask.request.form["response"]
+        save_atbilde(atbilde)
+        message = "Paldies par atbildi!"
+    
+    return flask.render_template("stars.html", message= message )
+
+
+
+
 
 app.run(debug=True)
