@@ -162,6 +162,17 @@ def sales():
 
 @app.route("/stars", methods=["GET", "POST"])
 def stars():
+    hsr_df = pd.read_csv('static\Honakai_Star_Rail_CharLIST.csv')
+
+    he_df = hsr_df.head(10)
+    he_df.hist(column="Name", by="Star Rarity", bins=30)
+    plt.savefig('static/images/stars_hsr.png')
+    ye_df = hsr_df.tail(10)
+    ye_df.hist(column="Name", by="Star Rarity", bins=30)
+    plt.savefig('static/images/starsT_hsr.png')
+
+
+
     message = ""
 
     if flask.request.method == "POST":
