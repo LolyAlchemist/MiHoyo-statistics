@@ -1,0 +1,103 @@
+body {
+    font-family: "Kristen ITC", sans-serif;
+    background: linear-gradient(rgba(236, 228, 122, 0.525), rgba(219, 216, 153, 0.453)),
+                url('/static/images/yue2.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navi {
+    width: 100%;
+    padding: 10px;
+    font-size: 22pt;
+    font-family: "Kristen ITC", sans-serif;
+    z-index: 1000;
+    background-color: rgb(194, 137, 211);
+}
+
+.navi ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navi ul li {
+    margin-left: 20px;
+}
+
+.navi ul li a {
+    color: rgb(234, 234, 156);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navi ul li a:hover {
+    background-color: rgba(45, 5, 242, 0.2);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: rgb(233, 125, 141);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.styled-table {
+    width: 90%;
+    height: 90%;
+    border-collapse: collapse;
+    background-color: rgba(235, 179, 179, 0.5);
+    padding: 10px;
+    table-layout: fixed;
+}
+
+.styled-table td {
+    border: 2px solid rgba(248, 115, 53, 0.226);
+    padding: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.text-cell {
+    width: 45%;
+    font-size: 18px;
+    color: #333;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image-cell img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
