@@ -8,8 +8,8 @@ hoyo-statistics<br>
   
 
 
-LolyAlchemist - Lolita(strada ar main.py(app.route, tabula image creation), palīdz Alisei), veido start.html(PABEIGTS)(design(css) + text) + colab tabulas, veido sales.html(PABEIGTS), Izveidoja visas datubazes. Minor adjustments to everthing. <br>
-AliseLi - Alise(strada ar css un tabulas taisa(exel)(PABEIGTS)), veido player.html(design(css))(PABEIGTS), strādā ar player.html saturu + desgin visam.(PABEIGTS), stars.html un css, star.html tabulas(grafiki).<br>
+LolyAlchemist - Lolita(strada ar main.py(app.route, tabula image creation), palīdz Alisei), veido start.html(PABEIGTS)(design(css) + text) + colab tabulas, veido sales.html(PABEIGTS), Izveidoja visas datubazes. Minor adjustments to everthing.star.html tabulas(grafiki HSR) + css  <br>
+AliseLi - Alise(strada ar css un tabulas taisa(exel)(PABEIGTS)), veido player.html(design(css))(PABEIGTS), strādā ar player.html saturu + desgin visam.(PABEIGTS), , star.html tabulas(grafiki GI).<br>
 
 
 
