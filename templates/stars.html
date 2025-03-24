@@ -31,7 +31,7 @@
     <table class="styled-table">
         <tr>
             <td class="text-cell"><br>
-                Honkai: Star Rail 4* un 5* skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
+                Honkai Star Rail 4* un 5* skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
              <br><br> <button id="downloadBtn5">Instalēt char_HSR_CSV</button>
 
                
@@ -49,7 +49,7 @@
         </tr>
       <tr>
           <td class="text-cell"><br>
-            Honkai: Star Rail 4* un 5* skaits, priekš pašam beigām (tails), kur rāda pēdējos 10 varoņus pēc to retuma.
+            Honkai Star Rail 4* un 5* skaits, priekš pašam beigām (tails), kur rāda pēdējos 10 varoņus pēc to retuma.
               <br><br> <button id="downloadBtn6">Instalēt char_HSR_CSV</button>
                
               <a id="downloadLink6" href="static\Honakai_Star_Rail_CharLIST.csv" download="Honakai_Star_Rail_CharLIST.csv" style="display:none;"></a>
@@ -67,23 +67,43 @@
         </tr>
   
             <tr>
-          <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Grafika var redzēt, ka GI bija savi kāpumi un kritumi. <br>Vidējs spēlētāju skaits ar katru versiju palielinājās par apmēram 7 mil. (Tā pat kā HSR, GI 1.0 līdz 1.1 versijai spēlētāju skaits palielinājās par 33 mil.)
-              <br><br>  <button id="downloadBtn2">Download gensin_CSV</button>
+          <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4* un 5* skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
+              <br><br>  <button id="downloadBtn7">Download gensin_CSV</button>
   
-              <a id="downloadLink2" href="/static/game_statisticsgenshinimpact.csv" download="game_statisticsgenshinimpact.csv" style="display:none;"></a>
+              <a id="downloadLink7" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
               
               <script>
-                  document.getElementById('downloadBtn2').addEventListener('click', function() {
-                      document.getElementById('downloadLink2').click();
+                  document.getElementById('downloadBtn7').addEventListener('click', function() {
+                      document.getElementById('downloadLink7').click();
                   });
               </script>
           </td>
           <td class="image-cell">
-          <img src="{{ url_for('static', filename='images/player_genshin.png') }}" alt="">
+          <img src="{{ url_for('static', filename='images/starsH_gii.png') }}" alt="">
   
   
           </td>
         </tr>
+
+        <tr>
+            <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4* un 5* skaits, priekš pašām beigām(tail), kur rāda pirmos 10 varoņus pēc to retuma.
+                <br><br>  <button id="downloadBtn8">Download gensin_CSV</button>
+    
+                <a id="downloadLink8" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
+                
+                <script>
+                    document.getElementById('downloadBtn8').addEventListener('click', function() {
+                        document.getElementById('downloadLink8').click();
+                    });
+                </script>
+            </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/starsT_gi2.png') }}" alt="">
+    
+    
+            </td>
+          </tr>
+
     </table>
 
 
