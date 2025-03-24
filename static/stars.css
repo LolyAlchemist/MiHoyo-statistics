@@ -1,7 +1,7 @@
 body {
     font-family: "Kristen ITC", sans-serif;
     background: linear-gradient(rgba(236, 228, 122, 0.525), rgba(219, 216, 153, 0.453)),
-                url('/static/images/yue2.jpg') no-repeat center center;
+                url('/static/images/liyue.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     text-align: left;
@@ -100,4 +100,69 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+#downloadBtn5 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn5:hover {
+    background-color: rgb(152, 106, 167);
+}
+
+#downloadBtn6 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn6:hover {
+    background-color: rgb(152, 106, 167);
+}
+
+#downloadBtn7 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn7:hover {
+    background-color: rgb(152, 106, 167);
+}
+#downloadBtn8 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn8:hover {
+    background-color: rgb(152, 106, 167);
+}
+
+button {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: rgb(152, 106, 167);
 }
