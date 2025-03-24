@@ -27,7 +27,20 @@
     </nav>
         
 
-    <nav style="width:30%; height:10px;"></nav>
+    <nav style="width:30%; height:10px;"></nav><br><br>
+
+
+
+
+
+    <h2>Did you like this page?</h2>
+    <form method= "post">
+        <button type="submit" name="response" value="Yes">Yes</button>
+        <button type="submit" name="response" value="No">No</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
 
 
 </body>
