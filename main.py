@@ -171,6 +171,15 @@ def stars():
     ye_df.hist(column="Name", by="Star Rarity", bins=30)
     plt.savefig('static/images/starsT_hsr.png')
 
+    gg_df = pd.read_csv('static\Genshin_Character_List.csv')
+    ihwa_df = gg_df.head(10)
+    ihwa_df.hist(column="Name", by="Star Rarity", bins=30)
+    plt.savefig('static/images/starsH_gii.png')
+
+    ihwa2_df = gg_df.tail(10)
+    ihwa2_df.hist(column="Name", by="Star Rarity", bins=30)
+    plt.savefig('static/images/starsT_gi2.png')
+
 
 
     message = ""
