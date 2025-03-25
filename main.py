@@ -92,15 +92,17 @@ def player():
 @app.route("/sales")
 def sales():
     data1 = {
-    "Version": ["1.0", "01.janv", "01.febr", "01.marts", "01.apr", "01.maijs"],
-    "Release Date": ["July 4, 2024", "15.aug.24", "September 26, 2024", "November 7, 2024", "December 18, 2024", "January 22, 2025"],
-    "Active Player Count": ["50 million", "Not specified", "Not specified", "Not specified", "Not specified", "Not specified"],
-    "Revenue": ["$50M in 11 days; $100M in first month", "$32.5M in August 2024; $34.5M in September 2024", "Not specified", "Not specified", "$8.6M daily; $250M total", "Not specified"],
-}
+        "Version": ["4.0", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "4.7", "4.8", "5.0", "5.2", "5.3"],
+        "Revenue": [
+            "$4.5B", "$4.7B", "$4.8B", "$5B", 
+            "$5.1B", "$5.2B", "$5.3B", "$5.4B", 
+            "$5.5B", "$1.56B", "$5.6B", "$5.7B"
+        ]
+    }
 
     df3 = pd.DataFrame(data1)
 
-    revenue_values = [50, 32.5, 5, 5, 250, 5]
+    revenue_values = [4.5, 4.7, 4.8, 5, 5.1, 5.2, 5.3, 5.4, 5.5 , 1.56, 5.6, 5.7]
     df3['Revenue Values'] = revenue_values
 
 
@@ -111,23 +113,19 @@ def sales():
     plt.savefig('static/images/sales_genshin.png')
 
     data2 = {
-    "Version": ["1.0", "01.janv", "01.febr", "01.marts", "01.apr", "01.maijs"],
-    "Release Date": ["July 4, 2024", "15.aug.24", "September 26, 2024", "November 7, 2024", "December 18, 2024", "January 22, 2025"],
-    "Active Player Count": ["50 million", "Not specified", "Not specified", "Not specified", "Not specified", "Not specified"],
-    "Revenue": [
-        "$150M", 
-        "67M", 
-        "Not specified", 
-        "Not specified", 
-        "$250M", 
-        "Not specified"
-        ],
+        "Version": ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "2.0", "2.1", "2.2", "2.3", "2.7", "3.0"],
+        "Revenue": [
+        "$60M)", "$400M", "$600M", "$700M", 
+        "$865M", "$1000M", "$1200M", 
+        "$1400M", "$1600M", "$1800M", 
+        "$2000M", "$2100M", "$2300M"
+        ]
     }
 
 
     df4 = pd.DataFrame(data2)
 
-    revenue_values = [150, 67, 5, 5, 250, 5]
+    revenue_values = [60, 400, 600, 700, 865, 1000, 1200, 1400, 1600, 1800, 2000, 2100, 2300]
     df4['Revenue Values'] = revenue_values
     df4.plot(y='Revenue Values', kind='pie', labels=df4['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
 
@@ -139,16 +137,12 @@ def sales():
     data3 = {
         "Version": ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5"],
         "Revenue": [
-        "$100M", 
-        "$70,", 
-        "Not specified", 
-        "Not specified", 
-        "$266M", 
-        "Not specified"
+        "100M", "$67M", "Not specified", 
+        "Not specified", "250M", "Not specified"
         ]
         }
     df5 = pd.DataFrame(data3)
-    revenue_values = [100, 70, 5, 5, 266, 5]
+    revenue_values = [100, 67, 0, 0, 250, 0]
     df5['Revenue'] = revenue_values
     df5.plot(y='Revenue', kind='pie', labels=df5['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
     plt.title('Ieņēmumu sadalījums pēc versijas')
