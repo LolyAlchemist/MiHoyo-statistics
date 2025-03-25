@@ -68,7 +68,7 @@
   
             <tr>
           <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4⭐ un 5⭐ skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
-              <br><br>  <button id="downloadBtn7">Download gensin_CSV</button>
+              <br><br>  <button id="downloadBtn7">Instalēt gensin_CSV</button>
   
               <a id="downloadLink7" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
               
@@ -87,7 +87,7 @@
 
         <tr>
             <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4⭐ un 5⭐ skaits, priekš pašām beigām(tail), kur rāda pirmos 10 varoņus pēc to retuma.
-                <br><br>  <button id="downloadBtn8">Download gensin_CSV</button>
+                <br><br>  <button id="downloadBtn8">Instalēt gensin_CSV</button>
     
                 <a id="downloadLink8" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
                 
@@ -99,6 +99,24 @@
             </td>
             <td class="image-cell">
             <img src="{{ url_for('static', filename='images/starsT_gi2.png') }}" alt="">
+    
+    
+            </td>
+          </tr>
+          <tr>
+            <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4⭐ un 5⭐ skaits, priekš pašām beigām(tail), kur rāda pirmos 10 varoņus pēc to retuma.
+                <br><br>  <button id="downloadBtn9">Instalēt HSR + GI</button>
+    
+                <a id="downloadLink9" href="static\HSR_GI_charLIST.csv" download="HSR_GI_charLIST.csv" style="display:none;"></a>
+                
+                <script>
+                    document.getElementById('downloadBtn9').addEventListener('click', function() {
+                        document.getElementById('downloadLink9').click();
+                    });
+                </script>
+            </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/starskopa.png') }}" alt="">
     
     
             </td>
