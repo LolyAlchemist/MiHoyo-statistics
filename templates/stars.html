@@ -1,184 +1,142 @@
-body {
-    font-family: "Kristen ITC", sans-serif;
-    background: linear-gradient(rgba(236, 228, 122, 0.525), rgba(219, 216, 153, 0.453)),
-                url('/static/images/yue2.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miHoyo statistics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stars.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navi">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="{{ url_for('start') }}" class="nav-link">Sākums</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('player') }}" class="nav-link">Spēlētāji</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('sales') }}" class="nav-link">Ieņēmumi</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('stars') }}" class="nav-link">Retums</a>
+            </li>
+        </ul>
+    </nav>
+        
+
+    <nav style="width:30%; height:10px;"></nav><br><br>
+    <table class="styled-table">
+        <tr>
+            <td class="text-cell"><br>
+                Honkai Star Rail 4⭐ un 5⭐ skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
+             <br><br> <button id="downloadBtn5">Instalēt char_HSR_CSV</button>
+
+               
+              <a id="downloadLink5" href="static\Honakai_Star_Rail_CharLIST.csv" download="Honakai_Star_Rail_CharLIST.csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn5').addEventListener('click', function() {
+                      document.getElementById('downloadLink5').click();
+                  });
+              </script>
+          </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/stars_hsr.png') }}" alt="">
+            </td>
+        </tr>
+      <tr>
+          <td class="text-cell"><br>
+            Honkai Star Rail 4⭐ un 5⭐ skaits, priekš pašam beigām (tail), kur rāda pēdējos 10 varoņus pēc to retuma.
+              <br><br> <button id="downloadBtn6">Instalēt char_HSR_CSV</button>
+               
+              <a id="downloadLink6" href="static\Honakai_Star_Rail_CharLIST.csv" download="Honakai_Star_Rail_CharLIST.csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn6').addEventListener('click', function() {
+                      document.getElementById('downloadLink6').click();
+                  });
+              </script>
+          </td>
+          <td class="image-cell">
+          <img src="{{ url_for('static', filename='images/starsT_hsr.png') }}" alt="">
+  
+          </td>
+        </tr>
+  
+            <tr>
+          <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4⭐ un 5⭐ skaits, priekš paša sākuma(head), kur rāda pirmos 10 varoņus pēc to retuma.
+              <br><br>  <button id="downloadBtn7">Instalēt gensin_CSV</button>
+  
+              <a id="downloadLink7" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
+              
+              <script>
+                  document.getElementById('downloadBtn7').addEventListener('click', function() {
+                      document.getElementById('downloadLink7').click();
+                  });
+              </script>
+          </td>
+          <td class="image-cell">
+          <img src="{{ url_for('static', filename='images/starsH_gii.png') }}" alt="">
+  
+  
+          </td>
+        </tr>
+
+        <tr>
+            <td class="text-cell">Spēle: Genshin Impact(GI). <br> <br> Genshin Impact 4⭐ un 5⭐ skaits, priekš pašām beigām(tail), kur rāda pirmos 10 varoņus pēc to retuma.
+                <br><br>  <button id="downloadBtn8">Instalēt gensin_CSV</button>
+    
+                <a id="downloadLink8" href="static\Genshin_Character_List.csv" download="Genshin_Character_List.csv" style="display:none;"></a>
+                
+                <script>
+                    document.getElementById('downloadBtn8').addEventListener('click', function() {
+                        document.getElementById('downloadLink8').click();
+                    });
+                </script>
+            </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/starsT_gi2.png') }}" alt="">
+    
+    
+            </td>
+          </tr>
+          <tr>
+            <td class="text-cell">Spēles: Genshin Impact(GI), Honkai Star Rail(HSR). <br> <br> Genshin Impact un Honkai Star Rail 4⭐ un 5⭐ skaita salīdzinājums.
+                <br><br>  <button id="downloadBtn9">Instalēt HSR + GI</button>
+    
+                <a id="downloadLink9" href="static\HSR_GI_charLIST.csv" download="HSR_GI_charLIST.csv" style="display:none;"></a>
+                
+                <script>
+                    document.getElementById('downloadBtn9').addEventListener('click', function() {
+                        document.getElementById('downloadLink9').click();
+                    });
+                </script>
+            </td>
+            <td class="image-cell">
+            <img src="{{ url_for('static', filename='images/starskopa.png') }}" alt="">
+    
+    
+            </td>
+          </tr>
+
+    </table>
 
 
-.navi {
-    width: 100%;
-    padding: 10px;
-    font-size: 22pt;
-    font-family: "Kristen ITC", sans-serif;
-    z-index: 1000;
-    background-color: rgb(194, 137, 211);
-}
 
-.navi ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
 
-.navi ul li {
-    margin-left: 20px;
-}
 
-.navi ul li a {
-    color: rgb(234, 234, 156);
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 16px;
-    display: block;
-}
+    <h2>Vai tev patika šie grafiķi?</h2>
+    <form method= "post">
+        <button type="submit" name="response" value="Yes">Jā</button>
+        <button type="submit" name="response" value="No">Nē</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
 
-.navi ul li a:hover {
-    background-color: rgba(45, 5, 242, 0.2);
-}
 
-.navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    color: rgb(233, 125, 141);
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-}
-
-.table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-.styled-table {
-    width: 90%;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-    border-collapse: collapse;
-    background-color: rgba(235, 179, 179, 0.5);
-    padding: 10px;
-    table-layout: fixed;
-    margin: 0 auto;
-}
-
-.styled-table td {
-    border: 2px solid rgba(248, 115, 53, 0.226);
-    padding: 15px;
-    text-align: left;
-    word-wrap: break-word;
-    overflow: hidden;
-}
-
-.text-cell {
-    width: 45%;
-    font-size: 18px;
-    color: #333;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.image-cell img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-#downloadBtn5 {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-}
-
-#downloadBtn5:hover {
-    background-color: rgb(152, 106, 167);
-}
-
-#downloadBtn6 {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-}
-
-#downloadBtn6:hover {
-    background-color: rgb(152, 106, 167);
-}
-
-#downloadBtn7 {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-}
-
-#downloadBtn7:hover {
-    background-color: rgb(152, 106, 167);
-}
-#downloadBtn8 {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-}
-
-#downloadBtn8:hover {
-    background-color: rgb(152, 106, 167);
-}
-
-#downloadBtn9 {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px; 
-}
-
-#downloadBtn9:hover {
-    background-color: rgb(152, 106, 167);
-}
-
-button {
-    background-color: rgb(194, 137, 211);
-    color: rgb(234, 234, 156);
-    border: none;
-    padding: 10px 20px; 
-    font-size: 16px;
-    border-radius: 5px;
-
-}
-
-button:hover {
-    background-color: rgb(152, 106, 167);
-}
+</body>
+</html>
