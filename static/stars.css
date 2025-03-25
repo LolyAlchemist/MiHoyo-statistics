@@ -153,6 +153,19 @@ img {
     background-color: rgb(152, 106, 167);
 }
 
+#downloadBtn9 {
+    background-color: rgb(194, 137, 211);
+    color: rgb(234, 234, 156);
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 5px; 
+}
+
+#downloadBtn9:hover {
+    background-color: rgb(152, 106, 167);
+}
+
 button {
     background-color: rgb(194, 137, 211);
     color: rgb(234, 234, 156);
