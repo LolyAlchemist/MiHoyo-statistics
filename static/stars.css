@@ -1,7 +1,7 @@
 body {
     font-family: "Kristen ITC", sans-serif;
     background: linear-gradient(rgba(236, 228, 122, 0.525), rgba(219, 216, 153, 0.453)),
-                url('/static/images/liyue.jpg') no-repeat center center;
+                url('/static/images/yue2.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     text-align: left;
@@ -72,10 +72,13 @@ img {
 .styled-table {
     width: 90%;
     height: 90%;
+    justify-content: center;
+    align-items: center;
     border-collapse: collapse;
     background-color: rgba(235, 179, 179, 0.5);
     padding: 10px;
     table-layout: fixed;
+    margin: 0 auto;
 }
 
 .styled-table td {
