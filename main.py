@@ -179,7 +179,7 @@ def stars():
     hugo_df = pd.read_csv('static\HSR_GI_charLIST.csv')
     yeonwoo_df = hugo_df
     axes = yeonwoo_df.hist(column="Game", by="Star Rarity", bins = 30)
-    for ax in np.ravel(axes):  # Ensures it works for multiple subplots
+    for ax in np.ravel(axes):
         ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
     plt.subplots_adjust(wspace=0.6)
     plt.savefig('static/images/starskopa.png')
