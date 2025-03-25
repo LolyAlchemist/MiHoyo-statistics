@@ -4,7 +4,7 @@ body {
                 url('/static/images/yue2.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
