@@ -1,7 +1,9 @@
 import flask
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
+import numpy as np
 
 app = flask.Flask(__name__)
 
@@ -173,6 +175,14 @@ def stars():
     ihwa2_df = gg_df.tail(10)
     ihwa2_df.hist(column="Name", by="Star Rarity", bins=30)
     plt.savefig('static/images/starsT_gi2.png')
+
+    hugo_df = pd.read_csv('static\HSR_GI_charLIST.csv')
+    yeonwoo_df = hugo_df
+    axes = yeonwoo_df.hist(column="Game", by="Star Rarity", bins = 30)
+    for ax in np.ravel(axes):  # Ensures it works for multiple subplots
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
+    plt.subplots_adjust(wspace=0.6)
+    plt.savefig('static/images/starskopa.png')
 
 
 
