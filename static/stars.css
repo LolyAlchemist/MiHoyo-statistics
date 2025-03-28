@@ -16,8 +16,7 @@ body {
     padding: 10px;
     font-size: 22pt;
     font-family: "Kristen ITC", sans-serif;
-    z-index: 1000;
-    background-color: slateblue;
+    background: linear-gradient(slateblue, rgba(189, 74, 255, 0.453))
 }
 
 .navi ul {
