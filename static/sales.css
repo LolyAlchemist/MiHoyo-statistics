@@ -16,7 +16,6 @@ body {
     width: 100%;
     padding: 10px;
     font-family: "Kristen ITC", sans-serif;
-    position: fixed; 
     font-size: 22pt;
     background: linear-gradient(rgb(255, 201, 181), lemonchiffon)
 }
