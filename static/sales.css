@@ -56,7 +56,7 @@ a:hover {
 }
 
 #downloadBtn {
-    background-color: rgb(234, 234, 156);
+    background: linear-gradient( lemonchiffon, rgba(248, 242, 161, 0.578));
     color: rgb(66, 34, 95);
     border: none;
     padding: 10px 20px; 
@@ -69,7 +69,7 @@ a:hover {
 }
 
 #downloadBtn3 {
-    background-color: rgb(234, 234, 156);
+    background: linear-gradient( lemonchiffon, rgba(248, 242, 161, 0.578));
     color: rgb(66, 34, 95);
     border: none;
     padding: 10px 20px; 
@@ -82,7 +82,7 @@ a:hover {
 }
 
 #downloadBtn4 {
-    background-color: rgb(234, 234, 156);
+    background: linear-gradient( lemonchiffon, rgba(248, 242, 161, 0.578));
     color: rgb(66, 34, 95);
     border: none;
     padding: 10px 20px; 
