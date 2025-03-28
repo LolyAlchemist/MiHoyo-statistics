@@ -79,3 +79,16 @@ th, td {
 th {
     background-color: lemonchiffon;
 }
+
+button {
+    background-color: linear-gradient( rgb(0, 0, 0), rgb(248, 242, 161,));
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius: 3px;
+
+}
+
+button:hover {
+    background-color: lemonchiffon;
+}
