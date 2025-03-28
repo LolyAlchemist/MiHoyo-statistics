@@ -9,3 +9,5 @@ Jāizveido statistikas par spēļu kompāniju miHoYo jeb HoyoVerse. Tajā būs: 
 LolyAlchemist - Lolita (strādā ar main.py (app.route, tabulas attēlu izveide), palīdz Alisei), veido start.html (PABEIGTS) (dizains (CSS) + teksts) + colab tabulas, veido sales.html (PABEIGTS), izveidoja visas datubāzes. Nelielas izmaiņas everything.star.html tabulas (grafiki HSR) + CSS. <br> <br>
 
 AliseLi - Alise (strādā ar CSS un tabulas veido (Excel) (PABEIGTS)), veido player.html (dizains (CSS)) (PABEIGTS), strādā ar player.html saturu + dizainu visam (PABEIGTS), star.html tabulas (grafiki GI). Labo gramatiskās kļūdas.
+<br><br>
+VIDEO --> https://drive.google.com/file/d/1t8QcMkcQzonGRQm8QNrrFoIKy0qDDjcO/view?usp=sharing
