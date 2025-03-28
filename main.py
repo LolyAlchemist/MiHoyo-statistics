@@ -71,7 +71,7 @@ def player():
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
     plt.yticks(rotation=90)
-    plt.savefig('static/images/player_zzz.png')
+    plt.savefig('static/images/player_zzz.png', transparent=True)
 
 
     df1 = pd.read_csv('static/Game_StatisticsHSR (1).csv')
@@ -80,7 +80,7 @@ def player():
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
-    plt.savefig('static/images/player_HSR.png')
+    plt.savefig('static/images/player_HSR.png', transparent=True)
 
     df2 = pd.read_csv('static/game_statisticsgenshinimpact.csv')
     df2.plot(kind='scatter', x='Version', y="Active Player Count", color = "slateblue")
@@ -88,7 +88,7 @@ def player():
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
     plt.ylabel("Revenue")
-    plt.savefig('static/images/player_genshin.png')
+    plt.savefig('static/images/player_genshin.png', transparent=True)
     return flask.render_template("player.html")
 
 @app.route("/sales")
@@ -108,11 +108,11 @@ def sales():
     df3['Revenue Values'] = revenue_values
 
 
-    df3.plot(y='Revenue Values', kind='pie', labels=df3['Version'],startangle=90, autopct='%1.1f%%', figsize=(8, 8))
+    df3.plot(y='Revenue Values', kind='pie', labels=df3['Version'],startangle=90, autopct='%1.1f%%', figsize=(8, 8), textprops={'color': 'white'})
 
-    plt.title('Ieņēmumu sadalījums pēc versijas')
+    plt.title('Ieņēmumu sadalījums pēc versijas', color= 'white')
     plt.ylabel('') 
-    plt.savefig('static/images/sales_genshin.png')
+    plt.savefig('static/images/sales_genshin.png', transparent=True)
 
     data2 = {
         "Version": ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "2.0", "2.1", "2.2", "2.3", "2.7", "3.0"],
@@ -129,12 +129,12 @@ def sales():
 
     revenue_values = [60, 400, 600, 700, 865, 1000, 1200, 1400, 1600, 1800, 2000, 2100, 2300]
     df4['Revenue Values'] = revenue_values
-    df4.plot(y='Revenue Values', kind='pie', labels=df4['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
+    df4.plot(y='Revenue Values', kind='pie', labels=df4['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8), textprops={'color': 'white'})
 
 
-    plt.title('Ieņēmumu sadalījums pēc versijas')
+    plt.title('Ieņēmumu sadalījums pēc versijas', color= 'white')
     plt.ylabel('')
-    plt.savefig('static/images/sales_HSR.png')
+    plt.savefig('static/images/sales_HSR.png', transparent=True)
 
     data3 = {
         "Version": ["1.0", "1.1", "1.2", "1.3", "1.4", "1.5"],
@@ -146,10 +146,10 @@ def sales():
     df5 = pd.DataFrame(data3)
     revenue_values = [100, 67, 0, 0, 250, 0]
     df5['Revenue'] = revenue_values
-    df5.plot(y='Revenue', kind='pie', labels=df5['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
-    plt.title('Ieņēmumu sadalījums pēc versijas')
+    df5.plot(y='Revenue', kind='pie', labels=df5['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8), textprops={'color': 'white'})
+    plt.title('Ieņēmumu sadalījums pēc versijas', color= 'white')
     plt.ylabel('')
-    plt.savefig('static/images/sales_zzz.png')
+    plt.savefig('static/images/sales_zzz.png', transparent=True)
 
 
 
@@ -162,19 +162,19 @@ def stars():
 
     he_df = hsr_df.head(10)
     he_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
-    plt.savefig('static/images/stars_hsr.png')
+    plt.savefig('static/images/stars_hsr.png', transparent = True)
     ye_df = hsr_df.tail(10)
     ye_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
-    plt.savefig('static/images/starsT_hsr.png')
+    plt.savefig('static/images/starsT_hsr.png', transparent=True)
 
     gg_df = pd.read_csv('static\Genshin_Character_List.csv')
     ihwa_df = gg_df.head(10)
     ihwa_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
-    plt.savefig('static/images/starsH_gii.png')
+    plt.savefig('static/images/starsH_gii.png', transparent=True)
 
     ihwa2_df = gg_df.tail(10)
     ihwa2_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
-    plt.savefig('static/images/starsT_gi2.png')
+    plt.savefig('static/images/starsT_gi2.png', transparent=True)
 
     hugo_df = pd.read_csv('static\HSR_GI_charLIST.csv')
     yeonwoo_df = hugo_df
@@ -182,7 +182,7 @@ def stars():
     for ax in np.ravel(axes):
         ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
     plt.subplots_adjust(wspace=0.6)
-    plt.savefig('static/images/starskopa.png')
+    plt.savefig('static/images/starskopa.png', transparent=True)
 
 
 
