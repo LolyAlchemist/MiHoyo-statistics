@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import sqlite3
-import numpy as np
+
 
 app = flask.Flask(__name__)
 
@@ -65,7 +65,7 @@ def start():
 @app.route("/player")
 def player():
     df = pd.read_csv('static/ZZZ_StatisticsCC.csv', sep=';')
-    df.plot(kind='scatter', x='Version', y="Active Player Count")
+    df.plot(kind='scatter', x='Version', y="Active Player Count", color = "slateblue" )
 
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
@@ -75,7 +75,7 @@ def player():
 
 
     df1 = pd.read_csv('static/Game_StatisticsHSR (1).csv')
-    df1.plot(kind='scatter', x='Version', y="Active Player Count")
+    df1.plot(kind='scatter', x='Version', y="Active Player Count", color = "slateblue")
 
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
@@ -83,7 +83,7 @@ def player():
     plt.savefig('static/images/player_HSR.png')
 
     df2 = pd.read_csv('static/game_statisticsgenshinimpact.csv')
-    df2.plot(kind='scatter', x='Version', y="Active Player Count")
+    df2.plot(kind='scatter', x='Version', y="Active Player Count", color = "slateblue")
 
     plt.title("spēlētāju skaits katrā versijā")
     plt.xlabel("Release Date")
@@ -108,7 +108,7 @@ def sales():
     df3['Revenue Values'] = revenue_values
 
 
-    df3.plot(y='Revenue Values', kind='pie', labels=df3['Version'], startangle=90, autopct='%1.1f%%', figsize=(8, 8))
+    df3.plot(y='Revenue Values', kind='pie', labels=df3['Version'],startangle=90, autopct='%1.1f%%', figsize=(8, 8))
 
     plt.title('Ieņēmumu sadalījums pēc versijas')
     plt.ylabel('') 
@@ -161,24 +161,24 @@ def stars():
     hsr_df = pd.read_csv('static\Honakai_Star_Rail_CharLIST.csv')
 
     he_df = hsr_df.head(10)
-    he_df.hist(column="Name", by="Star Rarity", bins=30)
+    he_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
     plt.savefig('static/images/stars_hsr.png')
     ye_df = hsr_df.tail(10)
-    ye_df.hist(column="Name", by="Star Rarity", bins=30)
+    ye_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
     plt.savefig('static/images/starsT_hsr.png')
 
     gg_df = pd.read_csv('static\Genshin_Character_List.csv')
     ihwa_df = gg_df.head(10)
-    ihwa_df.hist(column="Name", by="Star Rarity", bins=30)
+    ihwa_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
     plt.savefig('static/images/starsH_gii.png')
 
     ihwa2_df = gg_df.tail(10)
-    ihwa2_df.hist(column="Name", by="Star Rarity", bins=30)
+    ihwa2_df.hist(column="Name", by="Star Rarity", bins=30, color="slateblue")
     plt.savefig('static/images/starsT_gi2.png')
 
     hugo_df = pd.read_csv('static\HSR_GI_charLIST.csv')
     yeonwoo_df = hugo_df
-    axes = yeonwoo_df.hist(column="Game", by="Star Rarity", bins = 30)
+    axes = yeonwoo_df.hist(column="Game", by="Star Rarity", bins = 30, color="slateblue")
     for ax in np.ravel(axes):
         ax.set_xticklabels(ax.get_xticklabels(), rotation=0)
     plt.subplots_adjust(wspace=0.6)
