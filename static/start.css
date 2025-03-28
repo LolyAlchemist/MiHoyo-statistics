@@ -18,9 +18,7 @@ body {
     font-family: "Kristen ITC", sans-serif;
     position: fixed; 
     font-size: 22pt;
-    z-index: 1000;
-    background-color: rgb(244, 255, 163);
-    margin: 0 auto;
+    background: linear-gradient(rgb(255, 201, 181), lemonchiffon)
 }
 
 
