@@ -16,8 +16,7 @@ body {
     padding: 10px;
     font-size: 22pt;
     font-family: "Kristen ITC", sans-serif;
-    z-index: 1000;
-    background-color: rgb(194, 137, 211);
+    background: linear-gradient(slateblue, rgba(189, 74, 255, 0.453))
 }
 
 .navi ul {
@@ -103,7 +102,7 @@ img {
 }
 
 #downloadBtn0 {
-    background-color: rgb(194, 137, 211);
+    background-color: slateblue;
     color: rgb(234, 234, 156);
     border: none;
     padding: 10px 20px; 
@@ -116,7 +115,7 @@ img {
 }
 
 #downloadBtn1 {
-    background-color: rgb(194, 137, 211);
+    background-color: slateblue;
     color: rgb(234, 234, 156);
     border: none;
     padding: 10px 20px; 
@@ -129,7 +128,7 @@ img {
 }
 
 #downloadBtn2 {
-    background-color: rgb(194, 137, 211);
+    background-color:slateblue;
     color: rgb(234, 234, 156);
     border: none;
     padding: 10px 20px; 
