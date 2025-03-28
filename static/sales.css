@@ -105,13 +105,14 @@ a:hover {
     width: 90%;
     height: 90%;
     border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
     background-color: rgba(35, 34, 36, 0.5);
     padding: 10px;
     table-layout: fixed;
 }
 
 .styled-table td {
-    border: 2px solid rgba(255, 255, 255, 0.226);
     padding: 15px;
     text-align: left;
     word-wrap: break-word;
